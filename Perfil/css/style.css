@@ -1,0 +1,147 @@
+/* Aquí irían tus estilos extraídos del <style> */
+/* Ejemplo: */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Colores principales en tonos rosas */
+:root {
+  --rosa-claro: #FFB6D9;
+  --rosa-medio: #FF69B4;
+  --rosa-oscuro: #C2185B;
+  --rosa-pastel: #FFC0CB;
+  --blanco: #FFFFFF;
+  --gris-claro: #F5F5F5;
+  --gris-oscuro: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #FFE5F0 0%, #FFF0F5 100%);
+  color: var(--gris-oscuro);
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, var(--rosa-oscuro) 0%, var(--rosa-medio) 100%);
+  color: var(--blanco);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(193, 24, 91, 0.2);
+}
+
+h1, h2, h3 {
+  color: var(--rosa-oscuro);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 3px solid var(--rosa-claro);
+  padding-bottom: 0.5rem;
+}
+
+a {
+  color: var(--rosa-medio);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--rosa-oscuro);
+  text-decoration: underline;
+}
+
+button {
+  background: linear-gradient(135deg, var(--rosa-medio) 0%, var(--rosa-oscuro) 100%);
+  color: var(--blanco);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(193, 24, 91, 0.3);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card {
+  background: var(--blanco);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(193, 24, 91, 0.15);
+  border-left: 4px solid var(--rosa-medio);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(193, 24, 91, 0.25);
+}
+
+footer {
+  background: linear-gradient(135deg, var(--rosa-oscuro) 0%, var(--rosa-medio) 100%);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Estilos para las imágenes de trabajo - Second Grid */
+#work img {
+  width: 100% !important;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-radius: 8px;
+}
+
+#work .w3-row {
+  margin: 0;
+  gap: 10px;
+}
+
+#work .w3-half {
+  padding: 5px;
+  margin: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+}
